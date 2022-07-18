@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg"
+    tools:context=".otp_verify_fragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/linearbg"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Enter the OTP"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/num1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/otpbg"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="textPersonName"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textColorHint="#A8A2A2"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/num2"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/otpbg"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="textPersonName"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textColorHint="#A8A2A2"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/num3"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/otpbg"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="textPersonName"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textColorHint="#A8A2A2"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/num4"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/otpbg"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="textPersonName"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textColorHint="#A8A2A2"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/num5"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/otpbg"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="textPersonName"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textColorHint="#A8A2A2"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/num6"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/otpbg"
+                android:gravity="center"
+                android:hint="0"
+                android:inputType="textPersonName"
+                android:maxLength="1"
+                android:textColor="@color/black"
+                android:textColorHint="#A8A2A2"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/verifyotp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/buttonbg"
+            android:text="Verify OTP" />
+
+
+
+
+    </LinearLayout>
+</FrameLayout>
