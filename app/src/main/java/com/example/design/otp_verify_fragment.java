@@ -1,9 +1,13 @@
 package com.example.design;
 
 
+import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
 import androidx.fragment.app.DialogFragment;
 
 
@@ -17,10 +21,14 @@ import android.widget.Toast;
 import com.example.design.databinding.FragmentOtpVerifyFragmentBinding;
 
 
-public class otp_verify_fragment extends DialogFragment {
+public class otp_verify_fragment extends Dialog {
 
 
     FragmentOtpVerifyFragmentBinding binding;
+
+    public otp_verify_fragment(@NonNull Context context) {
+        super(context);
+    }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -31,21 +39,23 @@ public class otp_verify_fragment extends DialogFragment {
         binding.verifyotp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if((binding.num1.getText().toString().trim().length()==1) &&
-                        (binding.num2.getText().toString().trim().length()==1) &&
-                        (binding.num3.getText().toString().trim().length()==1)  &&
-                        (binding.num4.getText().toString().trim().length()==1) &&
-                        (binding.num5.getText().toString().trim().length()==1) &&
-                        (binding.num6.getText().toString().trim().length()==1))
+                if(!(binding.num1.getText().toString().trim().isEmpty()) &&
+                        !(binding.num2.getText().toString().trim().isEmpty()) &&
+                        !(binding.num3.getText().toString().trim().isEmpty())&&
+                        !(binding.num4.getText().toString().trim().isEmpty()) &&
+                        !(binding.num5.getText().toString().trim().isEmpty()) &&
+                        !(binding.num6.getText().toString().trim().isEmpty()))
                 {
-                    Toast.makeText(getContext(), "OTP Verify ", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(getContext(),MainActivity.class);
-                    startActivity(intent);
+                    Toast.makeText(getContext(), "OTP Verify ", Toast.LENGTH_SHORT).show();
 
                 }
+                else
+                    Toast.makeText(getContext(), "Invalid OTP", Toast.LENGTH_SHORT).show();
 
             }
         });
+        moveotpnumber();
 
         return binding.getRoot();
     }

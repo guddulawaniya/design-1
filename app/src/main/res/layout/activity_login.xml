@@ -39,18 +39,31 @@
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
 
+                android:id="@+id/logintablayout"
+                app:boxStrokeErrorColor="#EA0606"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
+                app:startIconTint="#3E3737"
                 android:layout_marginTop="10dp"
+                app:boxStrokeColor="#2196F3"
+                app:errorIconDrawable="@drawable/ic_error"
+                app:errorEnabled="true"
+                app:helperText="Required*"
+                app:helperTextTextColor="#FF0000"
+                app:startIconDrawable="@drawable/ic_email"
                 android:layout_marginEnd="16dp"
-                android:hint="Email"
+                android:textColorHint="#9C27B0"
+
+                android:hint="Email/Phone"
+                app:hintTextColor="#03A9F4"
                 tools:ignore="MissingConstraints">
 
                 <!--this is the actual edit text which takes the input-->
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:id="@+id/emailln"
+                    android:textColor="@color/black"
                     android:inputType="textEmailAddress"
                     android:layout_height="wrap_content" />
 
@@ -59,12 +72,25 @@
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
 
+                android:id="@+id/passlayoutlg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="10dp"
+                app:boxStrokeColor="#2196F3"
                 android:layout_marginEnd="16dp"
+                app:boxStrokeErrorColor="#EA0606"
+                app:endIconTint="#3E3737"
+                app:startIconTint="#3E3737"
+                android:textColorHint="#9C27B0"
+                app:errorEnabled="true"
+                app:endIconMode="password_toggle"
+                app:errorIconDrawable="@drawable/ic_error"
+                app:helperText="Required*"
+                app:helperTextTextColor="#FF0000"
+                app:startIconDrawable="@drawable/ic_pass"
                 android:hint="Password"
+                app:hintTextColor="#03A9F4"
                 tools:ignore="MissingConstraints">
 
                 <!--this is the actual edit text which takes the input-->
@@ -72,6 +98,8 @@
                     android:layout_width="match_parent"
                     android:id="@+id/loginpass"
                     android:inputType="numberPassword"
+                    android:textColor="@color/black"
+
 
                     android:layout_height="wrap_content" />
 

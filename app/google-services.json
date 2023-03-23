@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "924053293006",
+    "project_id": "merideanloginapp",
+    "storage_bucket": "merideanloginapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924053293006:android:9b730f56b249469a744d9f",
+        "android_client_info": {
+          "package_name": "com.example.design"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "924053293006-5cfhp37gp2t8t226o5mg2u7ecgek5gf8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChkY0Wu_uUp-kBKkISMEX7HiCS-bbsei8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "924053293006-5cfhp37gp2t8t226o5mg2u7ecgek5gf8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

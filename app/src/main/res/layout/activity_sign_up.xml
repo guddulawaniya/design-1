@@ -37,13 +37,26 @@
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
 
+                android:id="@+id/usertextlayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="16dp"
+                app:startIconTint="#3E3737"
+
+                app:boxStrokeErrorColor="#EA0606"
+                app:startIconDrawable="@drawable/ic_person"
+                app:boxStrokeColor="#2196F3"
+                app:endIconMode="clear_text"
+                app:endIconTint="#3E3737"
+                app:errorIconDrawable="@drawable/ic_error"
+                app:errorEnabled="true"
+                app:helperText="Required*"
+                app:helperTextTextColor="#FF0000"
+                android:textColorHint="#9C27B0"
                 android:hint="Username"
-                app:hintTextColor="#A69E9E"
+                app:hintTextColor="#0489F3"
                 tools:ignore="MissingConstraints">
 
                 <!--this is the actual edit text which takes the input-->
@@ -51,8 +64,8 @@
                     android:id="@+id/usernamesp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+
                     android:textColor="@color/black"
-                    android:textColorHint="#837E7E"
                     android:textSize="16sp" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -60,13 +73,23 @@
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
 
+                android:id="@+id/emaillayoutsp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="10dp"
+                app:boxStrokeErrorColor="#EA0606"
                 android:layout_marginEnd="16dp"
                 android:hint="Email"
-                app:hintTextColor="#A69E9E"
+                app:startIconTint="#3E3737"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/ic_error"
+                app:boxStrokeColor="#2196F3"
+                app:startIconDrawable="@drawable/ic_email"
+                android:textColorHint="#9C27B0"
+                app:hintTextColor="#0489F3"
+                app:helperText="Required*"
+                app:helperTextTextColor="#FF0000"
                 tools:ignore="MissingConstraints">
 
                 <!--this is the actual edit text which takes the input-->
@@ -75,8 +98,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress"
+
                     android:textColor="@color/black"
-                    android:textColorHint="#837E7E"
+
                     android:textSize="16sp" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -84,13 +108,25 @@
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
 
+                android:id="@+id/passlayoutsp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="10dp"
+                app:helperTextTextColor="#FF0000"
+                app:boxStrokeErrorColor="#EA0606"
                 android:layout_marginEnd="16dp"
                 android:hint="Password"
-                app:hintTextColor="#A69E9E"
+                app:helperText="Required*"
+                app:errorEnabled="true"
+                app:errorIconDrawable="@drawable/ic_error"
+                app:boxStrokeColor="#2196F3"
+                app:endIconTint="#3E3737"
+                app:startIconDrawable="@drawable/ic_pass"
+                android:textColorHint="#9C27B0"
+                app:endIconMode="password_toggle"
+                app:hintTextColor="#0489F3"
+                app:startIconTint="#3E3737"
                 tools:ignore="MissingConstraints">
 
                 <!--this is the actual edit text which takes the input-->
@@ -98,10 +134,9 @@
                     android:id="@+id/passwordsp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-
                     android:inputType="numberPassword"
                     android:textColor="@color/black"
-                    android:textColorHint="#837E7E"
+
                     android:textSize="16sp" />
 
             </com.google.android.material.textfield.TextInputLayout>
